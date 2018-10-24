@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/iOS/ObjectAL\ (iOS)-Prefix.pch \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Session/OALAudioSession.m \
+  ObjectAL/Session/OALAudioSession.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccMacros.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccConfig.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Support/CGPointExtension.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/SynthesizeSingleton.h \
+  ObjectAL/Session/OALSuspendHandler.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/ObjectALMacros.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/ObjectALConfig.h \
+  ObjectAL/Support/OALTools.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/ARCSafe_MemMgmt.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/OALNotifications.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCDirector.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccTypes.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Platforms/CCGL.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Platforms/Mac/CCGLView.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Platforms/CCDirectorView.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCProtocols.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Support/CCColor.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCResponderManager.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCTouch.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCTouchEvent.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCRenderer.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCShader.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/NSValue+CCRenderer.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCRendererBasicTypes.h \
+  /Users/iospikcio/Documents/IOS/SpritebuilderMaster2/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCRendererSharedTypes.h
