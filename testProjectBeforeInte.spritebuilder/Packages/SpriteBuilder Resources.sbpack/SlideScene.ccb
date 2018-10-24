@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -211,7 +211,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.20000000298023224</real>
+							<real>1.2000000476837158</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -467,8 +467,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.20000000298023224</real>
-									<real>0.20000000298023224</real>
+									<real>1.5</real>
+									<real>1.5</real>
 									<false/>
 									<integer>1</integer>
 								</array>
@@ -575,8 +575,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.20000000298023224</real>
-									<real>0.20000000298023224</real>
+									<real>1.5</real>
+									<real>1.5</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -683,8 +683,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.20000000298023224</real>
-									<real>0.20000000298023224</real>
+									<real>1.5</real>
+									<real>1.5</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -766,7 +766,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.18000000715255737</real>
+							<real>1.1799999475479126</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1121,8 +1121,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.10000000149011612</real>
-									<real>0.10000000149011612</real>
+									<real>0.34999999403953552</real>
+									<real>0.34999999403953552</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -1519,7 +1519,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1542,7 +1542,7 @@
 						<key>value</key>
 						<array>
 							<real>0.070000000298023224</real>
-							<real>0.81999999284744263</real>
+							<real>0.05000000074505806</real>
 							<integer>1</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1823,8 +1823,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.10000000149011612</real>
-									<real>0.10000000149011612</real>
+									<real>0.34999999403953552</real>
+									<real>0.34999999403953552</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -2244,7 +2244,7 @@
 						<key>value</key>
 						<array>
 							<real>0.070000000298023224</real>
-							<real>0.81999999284744263</real>
+							<real>-0.10000000149011612</real>
 							<integer>1</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -3085,7 +3085,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.085000000894069672</real>
+							<real>0.5</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -3129,8 +3129,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -3203,8 +3201,8 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>0.30000001192092896</real>
-										<real>0.40000000596046448</real>
+										<real>1.5</real>
+										<real>1.5</real>
 									</array>
 								</dict>
 								<dict>
@@ -3221,8 +3219,8 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>0.5</real>
-										<real>0.60000002384185791</real>
+										<real>2</real>
+										<real>2</real>
 									</array>
 								</dict>
 							</array>
@@ -3298,8 +3296,8 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>0.5</real>
-										<real>0.60000002384185791</real>
+										<real>2</real>
+										<real>2</real>
 									</array>
 								</dict>
 								<dict>
@@ -3316,8 +3314,8 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>0.30000001192092896</real>
-										<real>0.40000000596046448</real>
+										<real>1.5</real>
+										<real>1.5</real>
 									</array>
 								</dict>
 							</array>
@@ -3363,7 +3361,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.05000000074505806</real>
+							<real>0.10000000149011612</real>
 							<integer>2</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -3383,8 +3381,8 @@
 					<dict>
 						<key>baseValue</key>
 						<array>
-							<real>0.5</real>
-							<real>0.60000002384185791</real>
+							<real>2</real>
+							<real>2</real>
 						</array>
 						<key>name</key>
 						<string>scale</string>
@@ -3392,8 +3390,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.30000001192092896</real>
-							<real>0.40000000596046448</real>
+							<real>2</real>
+							<real>2</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -3442,6 +3440,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -3655,7 +3655,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.5</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
