@@ -96,6 +96,8 @@
 		EB49CD62217DD0DF006259BD /* SlideScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB49CD61217DD0DF006259BD /* SlideScene.swift */; };
 		EB6D359A21805ADD003867C8 /* PinMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D359921805ADD003867C8 /* PinMenuScene.swift */; };
 		EBDAD41C217A16DD00DFBE70 /* PinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAD41B217A16DD00DFBE70 /* PinScene.swift */; };
+		EBECC8E12180AAF00022FD7A /* SliderCryptoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */; };
+		EBECC8E52180BCC40022FD7A /* ItemCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +219,8 @@
 		EB49CD61217DD0DF006259BD /* SlideScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideScene.swift; sourceTree = "<group>"; };
 		EB6D359921805ADD003867C8 /* PinMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMenuScene.swift; sourceTree = "<group>"; };
 		EBDAD41B217A16DD00DFBE70 /* PinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinScene.swift; sourceTree = "<group>"; };
+		EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCryptoScene.swift; sourceTree = "<group>"; };
+		EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCrypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,7 +448,9 @@
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				EB6D359921805ADD003867C8 /* PinMenuScene.swift */,
 				EB49CD61217DD0DF006259BD /* SlideScene.swift */,
+				EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */,
 				EBDAD41B217A16DD00DFBE70 /* PinScene.swift */,
+				EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -627,7 +633,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ze" */;
+			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "testProjectBeforeInte" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -824,6 +830,8 @@
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
 				EB6D359A21805ADD003867C8 /* PinMenuScene.swift in Sources */,
+				EBECC8E12180AAF00022FD7A /* SliderCryptoScene.swift in Sources */,
+				EBECC8E52180BCC40022FD7A /* ItemCrypto.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				EB49CD62217DD0DF006259BD /* SlideScene.swift in Sources */,
 				EBDAD41C217A16DD00DFBE70 /* PinScene.swift in Sources */,
@@ -1199,7 +1207,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ze" */ = {
+		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "testProjectBeforeInte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDC17B978D8009739AE /* Debug */,

@@ -7,12 +7,12 @@
 		<key>SSZipArchive.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>10</integer>
 		</dict>
 		<key>SSZipArchiveAndroid.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>14</integer>
 		</dict>
 		<key>SSZipArchiveExampleApp.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>SSZipArchiveMac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>15</integer>
 		</dict>
 	</dict>
 </dict>

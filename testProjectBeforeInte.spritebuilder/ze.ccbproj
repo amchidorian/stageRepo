@@ -190,10 +190,7 @@
 		<key>pinCode</key>
 		<dict/>
 		<key>slide</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
+		<dict/>
 	</dict>
 	<key>versionStr</key>
 	<string>revision : f818142b86

@@ -22,8 +22,7 @@ class SlideScene: CCNode, CCScrollViewDelegate {
         self._scrollView.visible = false;
         _logButton.animationManager.runAnimations(forSequenceNamed: "closeSlide")
     }
-    
-
+ 
 func closeSlide(){
     _logButton.animationManager.runAnimations(forSequenceNamed: "closeSlide")
 }
