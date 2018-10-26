@@ -4,18 +4,7 @@ class MainScene : CCNode{
 
     
     func didLoadFromCCB(){
-        let fm:FileManager = FileManager.default
-        let path = Bundle.main.resourcePath!
         
-        do {
-            let items = try fm.contentsOfDirectory(atPath: "\(path)/Published-iOS/coinMarketCap/resources-phonehd")
-            
-            for item in items {
-                print("Found \(item)")
-            }
-        } catch {
-            // failed to read directory – bad permissions, perhaps?
-        }
     }
     
     func goToPin(){

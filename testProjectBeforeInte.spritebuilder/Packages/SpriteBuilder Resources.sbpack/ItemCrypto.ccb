@@ -51,7 +51,7 @@
 				<key>displayName</key>
 				<string>pin_rond_plain</string>
 				<key>memberVarAssignmentName</key>
-				<string>_iconCrypto</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -159,7 +159,7 @@
 				<key>displayName</key>
 				<string>CCLabelTTF</string>
 				<key>memberVarAssignmentName</key>
-				<string>_nomCrypto</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -356,7 +356,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>CryptoItem</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -371,7 +371,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string></string>
+				<string>qsd</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -395,9 +395,9 @@
 				<key>value</key>
 				<array>
 					<real>1</real>
-					<real>1</real>
+					<real>50</real>
 					<integer>2</integer>
-					<integer>2</integer>
+					<integer>0</integer>
 				</array>
 			</dict>
 			<dict>
