@@ -9,6 +9,8 @@
 import Foundation
 
 class PinScene: CCNode {
+    
+    // Variable Locale
     var lCreatePin:[Int] = []
     var lValidatePin:[Int] = []
     var lUpdatePin:[Int] = []
@@ -16,15 +18,18 @@ class PinScene: CCNode {
     var lDigitIcons:[CCSprite] = []
     var lPinLength:Int = 4
     
+    // Variable Statique
     static var sFinalPinCode:[Int]!
     static var sStep:Int!;
     
+    //Variable de Design
     weak var _label:CCLabelTTF!
     weak var _labelSecondStep:CCLabelTTF!
     weak var _clippingNode:CCClippingNode!
     weak var _myCircle:CCSprite!
     weak var _digit1, _digit2, _digit3, _digit4: CCSprite!
-
+    
+    // Init
      func didLoadFromCCB(){
         lDigitIcons = [_digit1, _digit2, _digit3, _digit4]
         hideDigit()
@@ -94,6 +99,7 @@ class PinScene: CCNode {
         }
     }
     
+    // func managing the code pin for the Update and Delete step.
     internal func managePinCodeStepUpdate(_ pNumber:Int){
         print(PinScene.sFinalPinCode)
         lUpdatePin.append(pNumber)

@@ -7,6 +7,8 @@ class MainScene : CCNode{
         
     }
     
+    // Func redirecting toward the PinCode
+    // Watch if a PinCode is already store in sFinalPinCode.
     func goToPin(){
         if PinScene.sFinalPinCode == nil{
             PinScene.sStep = 1;
@@ -20,6 +22,7 @@ class MainScene : CCNode{
         }
     }
     
+    //Func redirecting toward the HomeSlide
     func goToSlide(){
         let gameplayScene = CCBReader.load(asScene:"SlideScene")
         let transition = CCTransition(fadeWithDuration: 1.0)
@@ -27,6 +30,7 @@ class MainScene : CCNode{
             transition)
     }
     
+    //Func redirecting toward the CryptoSlide
     func goToSlideCrypto(){
         let gameplayScene = CCBReader.load(asScene:"CryptoScene")
         let transition = CCTransition(fadeWithDuration: 1.0)

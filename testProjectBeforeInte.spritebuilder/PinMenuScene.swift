@@ -12,6 +12,7 @@ class PinMenuScene: CCNode {
     
     static var sPinAction:Bool!
     
+    // Function de redirection en fonction de l'action (Delete / Update) choisie.
     func editPin(_ pSender:CCButton){
         if pSender.name == "updatePin" {
             PinMenuScene.sPinAction = true
