@@ -95,6 +95,41 @@
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
 		EB49CD62217DD0DF006259BD /* SlideScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB49CD61217DD0DF006259BD /* SlideScene.swift */; };
 		EB6D359A21805ADD003867C8 /* PinMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D359921805ADD003867C8 /* PinMenuScene.swift */; };
+		EBA90FB321875D430054D7CE /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA90FB221875D430054D7CE /* HttpRequest.swift */; };
+		EBCF5ECF21875808000EA4FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
+		EBCF5ED021875808000EA4FC /* PinMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D359921805ADD003867C8 /* PinMenuScene.swift */; };
+		EBCF5ED121875808000EA4FC /* SliderCryptoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */; };
+		EBCF5ED221875808000EA4FC /* ItemCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */; };
+		EBCF5ED321875808000EA4FC /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
+		EBCF5ED421875808000EA4FC /* SlideScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB49CD61217DD0DF006259BD /* SlideScene.swift */; };
+		EBCF5ED521875808000EA4FC /* PinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAD41B217A16DD00DFBE70 /* PinScene.swift */; };
+		EBCF5ED621875808000EA4FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
+		EBCF5ED821875808000EA4FC /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9790FE19E62E40001FFC4D /* libcocos2d.a */; };
+		EBCF5ED921875808000EA4FC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		EBCF5EDA21875808000EA4FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
+		EBCF5EDB21875808000EA4FC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3317B978D7009739AE /* OpenGLES.framework */; };
+		EBCF5EDC21875808000EA4FC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
+		EBCF5EDD21875808000EA4FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3717B978D7009739AE /* AudioToolbox.framework */; };
+		EBCF5EDE21875808000EA4FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3917B978D7009739AE /* AVFoundation.framework */; };
+		EBCF5EDF21875808000EA4FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3B17B978D7009739AE /* UIKit.framework */; };
+		EBCF5EE021875808000EA4FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
+		EBCF5EE121875808000EA4FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
+		EBCF5EE221875808000EA4FC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		EBCF5EE521875808000EA4FC /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590F188484E7003F4D28 /* Settings.png */; };
+		EBCF5EE621875808000EA4FC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B737896E180762440076A88C /* Default@2x.png */; };
+		EBCF5EE721875808000EA4FC /* iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590A188484E7003F4D28 /* iPad@2x.png */; };
+		EBCF5EE821875808000EA4FC /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
+		EBCF5EE921875808000EA4FC /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
+		EBCF5EEA21875808000EA4FC /* iPhone-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590C188484E7003F4D28 /* iPhone-old@2x.png */; };
+		EBCF5EEB21875808000EA4FC /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
+		EBCF5EEC21875808000EA4FC /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5910188484E7003F4D28 /* Settings@2x.png */; };
+		EBCF5EED21875808000EA4FC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B737896C180762440076A88C /* Default-Landscape~ipad.png */; };
+		EBCF5EEE21875808000EA4FC /* iPhone-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590B188484E7003F4D28 /* iPhone-old.png */; };
+		EBCF5EEF21875808000EA4FC /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590D188484E7003F4D28 /* iPhone.png */; };
+		EBCF5EF021875808000EA4FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B737896B180762440076A88C /* Default-568h@2x.png */; };
+		EBCF5EF121875808000EA4FC /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590E188484E7003F4D28 /* iPhone@2x.png */; };
+		EBCF5EF221875808000EA4FC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B737896D180762440076A88C /* Default.png */; };
+		EBCF5EF321875808000EA4FC /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		EBDAD41C217A16DD00DFBE70 /* PinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAD41B217A16DD00DFBE70 /* PinScene.swift */; };
 		EBECC8E12180AAF00022FD7A /* SliderCryptoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */; };
 		EBECC8E52180BCC40022FD7A /* ItemCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */; };
@@ -149,6 +184,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = B7E7DE341A76DB7D004234B7;
 			remoteInfo = cocos2dMacFramework;
+		};
+		EBCF5ECC21875808000EA4FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5018F24C0DFDEAC400C013A5;
+			remoteInfo = "cocos2d-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -218,6 +260,9 @@
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
 		EB49CD61217DD0DF006259BD /* SlideScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideScene.swift; sourceTree = "<group>"; };
 		EB6D359921805ADD003867C8 /* PinMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMenuScene.swift; sourceTree = "<group>"; };
+		EBA90FB221875D430054D7CE /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		EBCF5EF721875808000EA4FC /* ze iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ze iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCF5EF82187580D000EA4FC /* ze iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ze iOS copy-Info.plist"; path = "/Users/Pauline/Documents/DocumentDorian/Stage/testProjectBeforeInte.spritebuilder/ze iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		EBDAD41B217A16DD00DFBE70 /* PinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinScene.swift; sourceTree = "<group>"; };
 		EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCryptoScene.swift; sourceTree = "<group>"; };
 		EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCrypto.swift; sourceTree = "<group>"; };
@@ -275,6 +320,24 @@
 				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
 				B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCF5ED721875808000EA4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCF5ED821875808000EA4FC /* libcocos2d.a in Frameworks */,
+				EBCF5ED921875808000EA4FC /* GLKit.framework in Frameworks */,
+				EBCF5EDA21875808000EA4FC /* QuartzCore.framework in Frameworks */,
+				EBCF5EDB21875808000EA4FC /* OpenGLES.framework in Frameworks */,
+				EBCF5EDC21875808000EA4FC /* OpenAL.framework in Frameworks */,
+				EBCF5EDD21875808000EA4FC /* AudioToolbox.framework in Frameworks */,
+				EBCF5EDE21875808000EA4FC /* AVFoundation.framework in Frameworks */,
+				EBCF5EDF21875808000EA4FC /* UIKit.framework in Frameworks */,
+				EBCF5EE021875808000EA4FC /* Foundation.framework in Frameworks */,
+				EBCF5EE121875808000EA4FC /* CoreGraphics.framework in Frameworks */,
+				EBCF5EE221875808000EA4FC /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +511,7 @@
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				EB6D359921805ADD003867C8 /* PinMenuScene.swift */,
 				EB49CD61217DD0DF006259BD /* SlideScene.swift */,
+				EBA90FB221875D430054D7CE /* HttpRequest.swift */,
 				EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */,
 				EBDAD41B217A16DD00DFBE70 /* PinScene.swift */,
 				EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */,
@@ -486,6 +550,7 @@
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
+				EBCF5EF82187580D000EA4FC /* ze iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -495,6 +560,7 @@
 				B77F1B2E17B978D7009739AE /* ze.app */,
 				927F61BF196C771E000F43EF /* ze Android.app */,
 				7A4035FF19DDEE84007B6E8F /* ze Mac.app */,
+				EBCF5EF721875808000EA4FC /* ze iOS copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -591,9 +657,9 @@
 			productReference = 927F61BF196C771E000F43EF /* ze Android.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B77F1B2D17B978D7009739AE /* ze iOS */ = {
+		B77F1B2D17B978D7009739AE /* ze iOSs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ze iOS" */;
+			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ze iOSs" */;
 			buildPhases = (
 				D2E0167A18D782EC00927430 /* Run Script */,
 				B77F1B2A17B978D7009739AE /* Sources */,
@@ -606,9 +672,29 @@
 			dependencies = (
 				7A97911019E6319A001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ze iOS";
+			name = "ze iOSs";
 			productName = Example;
 			productReference = B77F1B2E17B978D7009739AE /* ze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBCF5ECA21875808000EA4FC /* ze iOS copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCF5EF421875808000EA4FC /* Build configuration list for PBXNativeTarget "ze iOS copy" */;
+			buildPhases = (
+				EBCF5ECD21875808000EA4FC /* Run Script */,
+				EBCF5ECE21875808000EA4FC /* Sources */,
+				EBCF5ED721875808000EA4FC /* Frameworks */,
+				EBCF5EE321875808000EA4FC /* Compile Metal Shaders */,
+				EBCF5EE421875808000EA4FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBCF5ECB21875808000EA4FC /* PBXTargetDependency */,
+			);
+			name = "ze iOS copy";
+			productName = Example;
+			productReference = EBCF5EF721875808000EA4FC /* ze iOS copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -617,7 +703,7 @@
 		B77F1B2617B978D7009739AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					7A4035FE19DDEE84007B6E8F = {
@@ -630,6 +716,9 @@
 								enabled = 0;
 							};
 						};
+					};
+					EBCF5ECA21875808000EA4FC = {
+						DevelopmentTeam = H4ZKV3NALB;
 					};
 				};
 			};
@@ -652,9 +741,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				B77F1B2D17B978D7009739AE /* ze iOS */,
+				B77F1B2D17B978D7009739AE /* ze iOSs */,
 				927F6198196C771E000F43EF /* ze Android */,
 				7A4035FE19DDEE84007B6E8F /* ze Mac */,
+				EBCF5ECA21875808000EA4FC /* ze iOS copy */,
 			);
 		};
 /* End PBXProject section */
@@ -758,6 +848,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBCF5EE421875808000EA4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCF5EE521875808000EA4FC /* Settings.png in Resources */,
+				EBCF5EE621875808000EA4FC /* Default@2x.png in Resources */,
+				EBCF5EE721875808000EA4FC /* iPad@2x.png in Resources */,
+				EBCF5EE821875808000EA4FC /* iPad.png in Resources */,
+				EBCF5EE921875808000EA4FC /* iPad-old@2x.png in Resources */,
+				EBCF5EEA21875808000EA4FC /* iPhone-old@2x.png in Resources */,
+				EBCF5EEB21875808000EA4FC /* Published-iOS in Resources */,
+				EBCF5EEC21875808000EA4FC /* Settings@2x.png in Resources */,
+				EBCF5EED21875808000EA4FC /* Default-Landscape~ipad.png in Resources */,
+				EBCF5EEE21875808000EA4FC /* iPhone-old.png in Resources */,
+				EBCF5EEF21875808000EA4FC /* iPhone.png in Resources */,
+				EBCF5EF021875808000EA4FC /* Default-568h@2x.png in Resources */,
+				EBCF5EF121875808000EA4FC /* iPhone@2x.png in Resources */,
+				EBCF5EF221875808000EA4FC /* Default.png in Resources */,
+				EBCF5EF321875808000EA4FC /* iPad-old.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -803,6 +915,34 @@
 			shellPath = /usr/bin/ruby;
 			shellScript = "# Special thanks to Filip Iliescu at Apple for the help with this.\n\n# Environment variables.\nSDK = ENV[\"PLATFORM_NAME\"]\nOBJECT_FILE_DIR = ENV[\"OBJECT_FILE_DIR\"]\nSRCROOT = ENV[\"SRCROOT\"]\nBUILT_PRODUCTS_DIR = ENV[\"BUILT_PRODUCTS_DIR\"]\nPRODUCT_NAME = ENV[\"PRODUCT_NAME\"]\n\n# User variables\n# Directory with your custom .metal files in it.\nSHADER_DIR = \"#{SRCROOT}/Source/MetalShaders\"\n# Location of the cocos2d library directory.\nCOCOS2D_DIR = \"#{SRCROOT}/Source/libs/cocos2d-iphone/cocos2d\"\n\nMETAL_ARGS = [\n\t\"-arch air64\",\n\t\"-emit-llvm\",\n\t\"-c\",\n\t\"-gline-tables-only\",\n\t\"-ffast-math\",\n\t\"-std=ios-metal1.0\",\n    %{-I \"#{COCOS2D_DIR}\"},\n]\n\ndef system(cmd)\n\tputs cmd\n    Kernel.system cmd\nend\n\nPRODUCTS = \"#{OBJECT_FILE_DIR}/CCMetalShaders\"\nARCHIVE = \"#{PRODUCTS}/default.metal-ar\"\n\ndef compile_shader(src)\n\tdst = \"#{PRODUCTS}/#{File.basename(src, \".metal\")}.air\"\n\t\n\t# Compile and archive the shader.\n\tsystem %{xcrun -sdk #{SDK} metal #{METAL_ARGS.join(\" \")} \"#{src}\" -o \"#{dst}\"}\n\tsystem %{xcrun -sdk #{SDK} ar r \"#{ARCHIVE}\" \"#{dst}\"}\nend\n\nif SDK == \"iphoneos\"\n\t# Cannot use default.metallib to avoid clashing with Xcode build magic.\n\t# This is part of a workaround due to the iOS simulator not supporting Metal and may go away in the future.\n\tmetal_lib = \"#{BUILT_PRODUCTS_DIR}/#{PRODUCT_NAME}.app/CCShaders.metallib\"\n    \n\t# Delete the old products dir and metal lib.\n\tsystem %{rm -rf \"#{PRODUCTS}\"}\n    system %{rm -f \"#{metal_lib}\"}\n    system %{mkdir -p \"#{PRODUCTS}\"}\n    \n    # Compile the builtin shaders.\n    compile_shader(%{#{COCOS2D_DIR}/Platforms/iOS/CCShaders.metal})\n    \n\t# Compile/archive all the shaders in the shader directory.\n    Dir.glob(\"#{SHADER_DIR}/*.metal\").each{|src| compile_shader(src)}\n    \n\t# Link all shaders into default lib.\n\tsystem %{xcrun -sdk #{SDK} metallib -o \"#{metal_lib}\" \"#{ARCHIVE}\"}\nend\n";
 		};
+		EBCF5ECD21875808000EA4FC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# osascript -e 'tell application \"System Events\"' -e 'set ProcessList to name of every process' -e 'if \"SpriteBuilder\" is in ProcessList then' -e 'tell application \"SpriteBuilder\" to publish' -e 'end if' -e 'end tell'";
+		};
+		EBCF5EE321875808000EA4FC /* Compile Metal Shaders */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Metal Shaders";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "# Special thanks to Filip Iliescu at Apple for the help with this.\n\n# Environment variables.\nSDK = ENV[\"PLATFORM_NAME\"]\nOBJECT_FILE_DIR = ENV[\"OBJECT_FILE_DIR\"]\nSRCROOT = ENV[\"SRCROOT\"]\nBUILT_PRODUCTS_DIR = ENV[\"BUILT_PRODUCTS_DIR\"]\nPRODUCT_NAME = ENV[\"PRODUCT_NAME\"]\n\n# User variables\n# Directory with your custom .metal files in it.\nSHADER_DIR = \"#{SRCROOT}/Source/MetalShaders\"\n# Location of the cocos2d library directory.\nCOCOS2D_DIR = \"#{SRCROOT}/Source/libs/cocos2d-iphone/cocos2d\"\n\nMETAL_ARGS = [\n\t\"-arch air64\",\n\t\"-emit-llvm\",\n\t\"-c\",\n\t\"-gline-tables-only\",\n\t\"-ffast-math\",\n\t\"-std=ios-metal1.0\",\n    %{-I \"#{COCOS2D_DIR}\"},\n]\n\ndef system(cmd)\n\tputs cmd\n    Kernel.system cmd\nend\n\nPRODUCTS = \"#{OBJECT_FILE_DIR}/CCMetalShaders\"\nARCHIVE = \"#{PRODUCTS}/default.metal-ar\"\n\ndef compile_shader(src)\n\tdst = \"#{PRODUCTS}/#{File.basename(src, \".metal\")}.air\"\n\t\n\t# Compile and archive the shader.\n\tsystem %{xcrun -sdk #{SDK} metal #{METAL_ARGS.join(\" \")} \"#{src}\" -o \"#{dst}\"}\n\tsystem %{xcrun -sdk #{SDK} ar r \"#{ARCHIVE}\" \"#{dst}\"}\nend\n\nif SDK == \"iphoneos\"\n\t# Cannot use default.metallib to avoid clashing with Xcode build magic.\n\t# This is part of a workaround due to the iOS simulator not supporting Metal and may go away in the future.\n\tmetal_lib = \"#{BUILT_PRODUCTS_DIR}/#{PRODUCT_NAME}.app/CCShaders.metallib\"\n    \n\t# Delete the old products dir and metal lib.\n\tsystem %{rm -rf \"#{PRODUCTS}\"}\n    system %{rm -f \"#{metal_lib}\"}\n    system %{mkdir -p \"#{PRODUCTS}\"}\n    \n    # Compile the builtin shaders.\n    compile_shader(%{#{COCOS2D_DIR}/Platforms/iOS/CCShaders.metal})\n    \n\t# Compile/archive all the shaders in the shader directory.\n    Dir.glob(\"#{SHADER_DIR}/*.metal\").each{|src| compile_shader(src)}\n    \n\t# Link all shaders into default lib.\n\tsystem %{xcrun -sdk #{SDK} metallib -o \"#{metal_lib}\" \"#{ARCHIVE}\"}\nend\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -833,9 +973,25 @@
 				EBECC8E12180AAF00022FD7A /* SliderCryptoScene.swift in Sources */,
 				EBECC8E52180BCC40022FD7A /* ItemCrypto.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
+				EBA90FB321875D430054D7CE /* HttpRequest.swift in Sources */,
 				EB49CD62217DD0DF006259BD /* SlideScene.swift in Sources */,
 				EBDAD41C217A16DD00DFBE70 /* PinScene.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCF5ECE21875808000EA4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCF5ECF21875808000EA4FC /* main.m in Sources */,
+				EBCF5ED021875808000EA4FC /* PinMenuScene.swift in Sources */,
+				EBCF5ED121875808000EA4FC /* SliderCryptoScene.swift in Sources */,
+				EBCF5ED221875808000EA4FC /* ItemCrypto.swift in Sources */,
+				EBCF5ED321875808000EA4FC /* MainScene.swift in Sources */,
+				EBCF5ED421875808000EA4FC /* SlideScene.swift in Sources */,
+				EBCF5ED521875808000EA4FC /* PinScene.swift in Sources */,
+				EBCF5ED621875808000EA4FC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +1012,11 @@
 			isa = PBXTargetDependency;
 			name = cocos2dAndroid;
 			targetProxy = 7A97912119E6321C001FFC4D /* PBXContainerItemProxy */;
+		};
+		EBCF5ECB21875808000EA4FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cocos2d-ios";
+			targetProxy = EBCF5ECC21875808000EA4FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -899,6 +1060,7 @@
 					"-ObjC",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.ze;
 				PRODUCT_MODULE_NAME = ze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -943,6 +1105,7 @@
 					"-ObjC",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.ze;
 				PRODUCT_MODULE_NAME = ze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -977,7 +1140,7 @@
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/Android/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/armv7a",
@@ -991,6 +1154,7 @@
 					"-lgles_apportable",
 					"-landroid",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.ze;
 				PRODUCT_MODULE_NAME = ze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1026,7 +1190,7 @@
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/Android/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/armv7a",
@@ -1039,6 +1203,7 @@
 					"-lgles_apportable",
 					"-landroid",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.ze;
 				PRODUCT_MODULE_NAME = ze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1052,16 +1217,28 @@
 		B77F1CDC17B978D8009739AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
@@ -1075,7 +1252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1085,16 +1262,27 @@
 		B77F1CDD17B978D8009739AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
 					"NS_BLOCK_ASSERTIONS=1",
@@ -1106,8 +1294,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1133,7 +1322,7 @@
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1170,7 +1359,7 @@
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1178,6 +1367,80 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dorian.cocos2d.ze;
 				PRODUCT_NAME = ze;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EBCF5EF521875808000EA4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = H4ZKV3NALB;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/include",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+				);
+				INFOPLIST_FILE = "ze iOS copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorian.cocos2d.ze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EBCF5EF621875808000EA4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = H4ZKV3NALB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/include",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+				);
+				INFOPLIST_FILE = "ze iOS copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorian.cocos2d.ze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1216,11 +1479,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ze iOS" */ = {
+		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ze iOSs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDF17B978D8009739AE /* Debug */,
 				B77F1CE017B978D8009739AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCF5EF421875808000EA4FC /* Build configuration list for PBXNativeTarget "ze iOS copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCF5EF521875808000EA4FC /* Debug */,
+				EBCF5EF621875808000EA4FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

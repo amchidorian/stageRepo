@@ -4,7 +4,7 @@ class MainScene : CCNode{
 
     
     func didLoadFromCCB(){
-        
+        HttpRequest().apiRequest("https://api.coinmarketcap.com/v2/ticker/")
     }
     
     // Func redirecting toward the PinCode

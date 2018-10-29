@@ -7,12 +7,12 @@
 		<key>ObjectiveChipmunk-Android.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>23</integer>
 		</dict>
 		<key>ObjectiveChipmunk-Mac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>24</integer>
 		</dict>
 		<key>ObjectiveChipmunk-iPhone.xcscheme</key>
 		<dict>

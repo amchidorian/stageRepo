@@ -17,7 +17,7 @@ class ItemCrypto{
         print("qopsdh")
         print(_nomCrypto)
     }
-
+ 
     func setName(_ pName:String){
         _nomCrypto.name = pName;
     }
