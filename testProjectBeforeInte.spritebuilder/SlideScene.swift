@@ -43,9 +43,9 @@ class SlideScene: CCNode, CCScrollViewDelegate {
 
     // Func detecting the slide page change.
     func scrollViewDidScroll(_ scrollView: CCScrollView!) {
-    self.lIndexPage = Int(_scrollView!.horizontalPage);
-    self.displayImg();
-}
+        self.lIndexPage = Int(_scrollView!.horizontalPage);
+        self.displayImg();
+    }
     
     // Func displaying the right image depending on the slide position
     // store in lIndexPage

@@ -12,55 +12,130 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     
     //Variable locale
     var lDataCrypto:Array<[String:Any]>! = []
+    var lDataCryptoAlphabet:Array<[String:Any]>! = []
     var lTemplateCrypto:[String:Any]!
+    var lSlider:CCNode!
+    var lItemCryptoList:CCNode! = CCBReader.load("ItemCrypto")
+    var lItemCryptoGrid:CCNode! = CCBReader.load("ItemCryptoGrid")
+    var lNbItemOnSlider:CGFloat = 100
+    var lItemHeight:CGFloat!
+    var lOptions:Bool = true
     
     //Variable Design
     weak var _crypto1: CCNode!
+    weak var _optionsNode:CCNode!
     weak var _scrollViewCrypto:CCScrollView!
+    weak var _alphaPlain:CCSprite!
+    weak var _favPlain:CCSprite!
+    weak var _gridItem:CCSprite!
+    weak var _listItem:CCSprite!
+    weak var _deviseLabel:CCLabelTTF!
     
-    var lListeItems:[String]! = []
-    var lListeNomItems:[String]! = []
-    var clone:CCNode!
-    let fm:FileManager = FileManager.default
-    let path = Bundle.main.resourcePath!
-    static var sCryptoData:Data!
-    var lData:Data!
+    // Variable Static
+    static var sAlphabet:Bool = false
+    static var sDollars:Bool = true
+    static var sList = true
+    static var sFav = false
     
     
     
     func didLoadFromCCB(){
+        _scrollViewCrypto.delegate = self
+        let parentSlider:[CCNode]! = (_scrollViewCrypto!.children as? [CCNode])
+        lSlider = parentSlider[0]
         for _ in 0..<100{lDataCrypto.append([:])}
+        for _ in 0..<100{lDataCryptoAlphabet.append([:])}
         organizeCryptoDatas()
-        let children:[CCNode]! = _scrollViewCrypto!.children as? [CCNode]
-        let slider = children[0]
-        createSliderLine(slider)
-        
+        alphabeticSort()
+        createSlider()
     }
     
-    func createSliderLine(_ pSlider:CCNode){
-        let item:CCNode = CCBReader.load("ItemCrypto")
-        let ih = item.contentSize.height
-        pSlider.contentSize.height = ih * 100
-        let sliderH = pSlider.contentSize.height
+    func alphaView(){
+        SliderCryptoScene.sAlphabet = !SliderCryptoScene.sAlphabet
+        if SliderCryptoScene.sAlphabet {
+            _alphaPlain.opacity = 0.8
+        } else {
+            _alphaPlain.opacity = 0.5
+        }
+        createSlider()
+    }
+
+    func scrollViewDidScroll(_ _scrollViewCrypto: CCScrollView!) {
+        let lScrollPositionY = _scrollViewCrypto.scrollPosition.y;
+        if lOptions {
+            if lScrollPositionY > 600 {
+                _optionsNode.animationManager.runAnimations(forSequenceNamed: "hideOptions")
+                lOptions = !lOptions
+            }
+        }
+        if !lOptions {
+            if lScrollPositionY < 600 {
+                _optionsNode.animationManager.runAnimations(forSequenceNamed: "displayOptions")
+                lOptions = !lOptions
+            }
+        }
+    }
+    
+    func changeView(){
+        SliderCryptoScene.sList = !SliderCryptoScene.sList
+        lNbItemOnSlider = SliderCryptoScene.sList ? 100 : 34
+        createSlider()
+    }
+    
+    func createSlider(){
+        lSlider.removeAllChildren()
+        lItemHeight = SliderCryptoScene.sList ? lItemCryptoList.contentSize.height : lItemCryptoGrid.contentSize.height
+        lSlider.contentSize.height = lItemHeight * lNbItemOnSlider
+        if SliderCryptoScene.sList {
+            createSliderList()
+        } else {
+            createSliderGrid()
+        }
+    }
+
+    func createSliderList(){
         for var i in 0..<lDataCrypto.count{
             var item:CCNode = CCBReader.load("ItemCrypto")
-            var iFloat = CGFloat(i+1)
-            item.position = CGPoint.init(x: 0, y: sliderH - ih * iFloat)
+            item.position = CGPoint.init(x: 0, y: lItemHeight * lNbItemOnSlider - lItemHeight * CGFloat(i+1))
             var itemChildren:Array = item.children
             for obj in itemChildren {
                 editItem(obj, i)
             }
-            pSlider.addChild(item)
+            lSlider.addChild(item)
+        }
+    }
+
+    func createSliderGrid(){
+        var posIndex = 0;
+        for i in stride(from: 0, to: lDataCrypto.count, by: 3) {
+            var tempi = i
+            var item:CCNode = CCBReader.load("ItemCryptoGrid")
+            item.position = CGPoint.init(x: 0, y: lItemHeight * 34 - lItemHeight * CGFloat(posIndex+1))
+            var itemChildrens:Array = item.children
+            for itemChildren in itemChildrens {
+                print(tempi)
+                if tempi + 1 > lDataCrypto.count {
+                    print("error")
+                    (itemChildren as! CCNode).visible = false
+                } else {
+                    var itemChildrenChildrens:Array = (itemChildren as! CCNode).children
+                    for itemChildrenChildren in itemChildrenChildrens {
+                        editItem(itemChildrenChildren, tempi)
+                    }
+                    tempi = tempi+1
+                }
+            }
+            lSlider.addChild(item)
+            posIndex = posIndex + 1
         }
     }
     
     func editItem(_ lElement:Any, _ lIndex:Int){
-        print(lDataCrypto![lIndex])
+        var lCryptoData = SliderCryptoScene.sAlphabet ? lDataCryptoAlphabet![lIndex] : lDataCrypto![lIndex]
         if let sprite = lElement as? CCSprite {
             if sprite.name.elementsEqual("light") {
                 let img = sprite.children[0] as! CCSprite
-                print(lDataCrypto![lIndex]["img"]!)
-                img.spriteFrame = CCSpriteFrame.init(imageNamed: "coinMarketCap/\(lDataCrypto![lIndex]["img"]!)")
+                img.spriteFrame = CCSpriteFrame.init(imageNamed: "coinMarketCap/\(lCryptoData["img"]!)")
             }
         }
         if let colorNode = lElement as? CCNodeColor {
@@ -68,76 +143,70 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
         if let label = lElement as? CCLabelTTF {
             if label.name.elementsEqual("cryptoName") {
-                label.string = lDataCrypto![lIndex]["name"]! as? String
+                label.string = "\(lCryptoData["name"]!)"
             }
             if label.name.elementsEqual("shortName") {
-                label.string = lDataCrypto![lIndex]["shortName"]! as? String
+                label.string = "\(lCryptoData["symbol"]!)"
             }
             if label.name.elementsEqual("value") {
-                label.string = lDataCrypto![lIndex]["price"]! as? String
+                label.string = "$ \(lCryptoData["price"]!)"
             }
             if label.name.elementsEqual("percent") {
-                label.string = lDataCrypto![lIndex]["change7"]! as? String
+                let floatPercent = (lCryptoData["change7"]! as! NSNumber).floatValue
+                label.string = "\(floatPercent)"
+                if floatPercent > 0 {
+                    label.color = CCColor(uiColor: UIColor(red: 0, green: 1, blue: 0, alpha: 1.0));
+                } else if floatPercent < 0 {
+                    label.color = CCColor(uiColor: UIColor(red: 1, green: 0, blue: 0, alpha: 1.0));
+                }
             }
         }
     }
     
     func organizeCryptoDatas(){
-        if let cryptoDatas = HttpRequest.sCryptoDataParsed["data"] as? NSDictionary{
-            for(_,value) in cryptoDatas {
-                self.lTemplateCrypto = [:]
-                if let cryptoData = value as? NSDictionary{
-                    organizeCryptoData(cryptoData)
-                    let index = ((lTemplateCrypto["rank"] as? Int)!) - 1
-                    lTemplateCrypto["img"] = "\(lTemplateCrypto["name"]!).png"
-                    lDataCrypto![index] = self.lTemplateCrypto!
-                }
-            }
+        let cryptoDatas = unwrapJson(HttpRequest.sCryptoDataParsed!["data"]!)
+        for(_,value) in cryptoDatas {
+            self.lTemplateCrypto = [:]
+            let cryptoData = unwrapJson(value)
+            organizeCryptoData(cryptoData)
+            let index = ((lTemplateCrypto["rank"] as? Int)!) - 1
+            lTemplateCrypto["img"] = "\(lTemplateCrypto["name"]!).png"
+            lDataCrypto![index] = self.lTemplateCrypto!
         }
     }
     
     func organizeCryptoData(_ pCryptoData:NSDictionary){
         for(key,value) in pCryptoData {
             let jsonKey = key as? String
-            print(jsonKey)
             switch jsonKey {
             case "rank":
                 self.lTemplateCrypto["rank"] = value
-                print(lTemplateCrypto)
                 break
             case "name":
                 self.lTemplateCrypto["name"] = value
-                print(lTemplateCrypto)
                 break
             case "symbol" :
                 self.lTemplateCrypto["symbol"] = value
-                print(lTemplateCrypto)
                 break
             case "total_supply" :
                 self.lTemplateCrypto["total"] = value
-                print(lTemplateCrypto)
                 break
             case "price" :
                 self.lTemplateCrypto["price"] = value
-                print(lTemplateCrypto)
                 break
             case "percent_change_7d" :
                 self.lTemplateCrypto["change7"] = value
-                print(lTemplateCrypto)
                 break
             case "percent_change_24h" :
                 self.lTemplateCrypto["change24"] = value
-                print(lTemplateCrypto)
                 break
             case "quotes" :
                 let lTempData = unwrapJson(value)
                 organizeCryptoData(lTempData)
-                print(lTemplateCrypto)
                 break
             case "USD" :
                 let lTempData = unwrapJson(value)
                 organizeCryptoData(lTempData)
-                print(lTemplateCrypto)
                 break
             default:
                 break
@@ -146,8 +215,21 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     }
     
     func unwrapJson(_ data:Any) -> NSDictionary{
-        let lDataToReturn = data as? NSDictionary
-        return lDataToReturn!
+        if let lDataToReturn = data as? NSDictionary {
+            return lDataToReturn
+        } else {
+            return [:]
+        }
+    }
+    
+    func alphabeticSort(){
+        lDataCryptoAlphabet = lDataCrypto
+        lDataCryptoAlphabet.sort {
+            let lDataCryptoAlphabetA = ($0.0["name"] as! String).lowercased()
+            let lDataCryptoAlphabetB = ($0.1["name"] as! String).lowercased()
+            
+            return lDataCryptoAlphabetA < lDataCryptoAlphabetB
+        }
     }
     
 }
