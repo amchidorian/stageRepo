@@ -152,7 +152,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
             colorNode.color = CCColor(uiColor: UIColor(red: 40/255.0, green: 53/255.0, blue: 61/255.0, alpha: 1.0));
         }
         if let btn = lElement as? CCButton {
-            btn.name = "\(lCryptoData["name"])";
+            btn.name = "\(lCryptoData["rank"]!)";
             btn.setTarget(self, selector: #selector(detailView))
         }
         if let label = lElement as? CCLabelTTF {
