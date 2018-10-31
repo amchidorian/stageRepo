@@ -89,7 +89,11 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     }
     
     func detailView(_ pSender:CCButton){
-        print(pSender.name)
+        let lIndexData = (Int(pSender.name!)!) - 1
+        DetailCrypto.sDataCrypto = lDataCrypto[lIndexData]
+        let gameplayScene = CCBReader.load(asScene:"DetailCrypto")
+        let transition = CCTransition(fadeWithDuration: 1.0)
+        CCDirector.shared().present(gameplayScene, with: transition)
     }
     
     func createSlider(){

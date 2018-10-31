@@ -26,13 +26,13 @@ class DetailCrypto: CCNode {
     }
     
     func setDetails(){
-        _nameCrypto.string = "\(DetailCrypto.sDataCrypto["name"])"
-        _symbolCrypto.string = "\(DetailCrypto.sDataCrypto["symbol"])"
-        _valueCrypto.string = "\(DetailCrypto.sDataCrypto["price"])"
-        _supplyCrypto.string = "\(DetailCrypto.sDataCrypto["total"])"
-        _change7Crypto.string = "\(DetailCrypto.sDataCrypto["change7"])"
-        _change24Crypto.string = "\(DetailCrypto.sDataCrypto["change24"])"
-        _rankCrypto.string = "Crypto n°\(DetailCrypto.sDataCrypto["rank"])"
-        _logoCrypto.spriteFrame = CCSpriteFrame.init(imageNamed: "coinMarketCap/\(DetailCrypto.sDataCrypto["img"]!)")
+        _nameCrypto.string = "\(DetailCrypto.sDataCrypto!["name"]!)"
+        _symbolCrypto.string = "\(DetailCrypto.sDataCrypto!["symbol"]!)"
+        _valueCrypto.string = "\(DetailCrypto.sDataCrypto!["price"]!)"
+        _supplyCrypto.string = "\(DetailCrypto.sDataCrypto!["total"]!)"
+        _change7Crypto.string = "\(DetailCrypto.sDataCrypto!["change7"]!)"
+        _change24Crypto.string = "\(DetailCrypto.sDataCrypto!["change24"]!)"
+        _rankCrypto.string = "Crypto n°\(DetailCrypto.sDataCrypto!["rank"]!)"
+        _logoCrypto.spriteFrame = CCSpriteFrame.init(imageNamed: "coinMarketCap/\(DetailCrypto.sDataCrypto!["img"]!)")
     }
 }

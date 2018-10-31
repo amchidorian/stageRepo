@@ -183,8 +183,8 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>detailView:</string>
-							<integer>2</integer>
+							<string></string>
+							<integer>1</integer>
 						</array>
 					</dict>
 					<dict>
@@ -438,8 +438,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -1589,7 +1587,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>SliderCryptoScene</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -1658,6 +1656,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
