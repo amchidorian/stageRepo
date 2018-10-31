@@ -95,6 +95,7 @@
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
 		EB49CD62217DD0DF006259BD /* SlideScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB49CD61217DD0DF006259BD /* SlideScene.swift */; };
 		EB6D359A21805ADD003867C8 /* PinMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D359921805ADD003867C8 /* PinMenuScene.swift */; };
+		EB6FD7392189E97200159A00 /* DetailCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FD7382189E97200159A00 /* DetailCrypto.swift */; };
 		EBA90FB321875D430054D7CE /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA90FB221875D430054D7CE /* HttpRequest.swift */; };
 		EBCF5ECF21875808000EA4FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
 		EBCF5ED021875808000EA4FC /* PinMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D359921805ADD003867C8 /* PinMenuScene.swift */; };
@@ -260,6 +261,7 @@
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
 		EB49CD61217DD0DF006259BD /* SlideScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideScene.swift; sourceTree = "<group>"; };
 		EB6D359921805ADD003867C8 /* PinMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMenuScene.swift; sourceTree = "<group>"; };
+		EB6FD7382189E97200159A00 /* DetailCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCrypto.swift; sourceTree = "<group>"; };
 		EBA90FB221875D430054D7CE /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		EBCF5EF721875808000EA4FC /* ze iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ze iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCF5EF82187580D000EA4FC /* ze iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ze iOS copy-Info.plist"; path = "/Users/Pauline/Documents/DocumentDorian/Stage/testProjectBeforeInte.spritebuilder/ze iOS copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -513,6 +515,7 @@
 				EB49CD61217DD0DF006259BD /* SlideScene.swift */,
 				EBA90FB221875D430054D7CE /* HttpRequest.swift */,
 				EBECC8E02180AAF00022FD7A /* SliderCryptoScene.swift */,
+				EB6FD7382189E97200159A00 /* DetailCrypto.swift */,
 				EBDAD41B217A16DD00DFBE70 /* PinScene.swift */,
 				EBECC8E42180BCC40022FD7A /* ItemCrypto.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -969,6 +972,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
+				EB6FD7392189E97200159A00 /* DetailCrypto.swift in Sources */,
 				EB6D359A21805ADD003867C8 /* PinMenuScene.swift in Sources */,
 				EBECC8E12180AAF00022FD7A /* SliderCryptoScene.swift in Sources */,
 				EBECC8E52180BCC40022FD7A /* ItemCrypto.swift in Sources */,

@@ -57,7 +57,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         } else {
             _alphaPlain.opacity = 0.5
         }
-        createSlider()
+       createSlider()
     }
 
     func scrollViewDidScroll(_ _scrollViewCrypto: CCScrollView!) {
@@ -80,6 +80,16 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         SliderCryptoScene.sList = !SliderCryptoScene.sList
         lNbItemOnSlider = SliderCryptoScene.sList ? 100 : 34
         createSlider()
+    }
+    
+    func changeDevise(){
+        SliderCryptoScene.sDollars = !SliderCryptoScene.sDollars
+        _deviseLabel.string = SliderCryptoScene.sDollars ? "€" : "$"
+        createSlider()
+    }
+    
+    func detailView(_ pSender:CCButton){
+        print(pSender.name)
     }
     
     func createSlider(){
@@ -141,6 +151,10 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         if let colorNode = lElement as? CCNodeColor {
             colorNode.color = CCColor(uiColor: UIColor(red: 40/255.0, green: 53/255.0, blue: 61/255.0, alpha: 1.0));
         }
+        if let btn = lElement as? CCButton {
+            btn.name = "\(lCryptoData["name"])";
+            btn.setTarget(self, selector: #selector(detailView))
+        }
         if let label = lElement as? CCLabelTTF {
             if label.name.elementsEqual("cryptoName") {
                 label.string = "\(lCryptoData["name"]!)"
@@ -149,7 +163,8 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
                 label.string = "\(lCryptoData["symbol"]!)"
             }
             if label.name.elementsEqual("value") {
-                label.string = "$ \(lCryptoData["price"]!)"
+                let lPrice = SliderCryptoScene.sDollars ? lCryptoData["price"]! : (lCryptoData["price"]! as! CGFloat) * CGFloat(0.88)
+                label.string = SliderCryptoScene.sDollars ? "$ \(lPrice)" : "\(lPrice) €"
             }
             if label.name.elementsEqual("percent") {
                 let floatPercent = (lCryptoData["change7"]! as! NSNumber).floatValue
