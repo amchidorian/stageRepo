@@ -7,22 +7,22 @@
 		<key>Documentation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>35</integer>
+			<integer>17</integer>
 		</dict>
 		<key>ObjectAL (Android).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>18</integer>
 		</dict>
 		<key>ObjectAL (Mac).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>36</integer>
+			<integer>19</integer>
 		</dict>
 		<key>ObjectAL (iOS).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>33</integer>
+			<integer>16</integer>
 		</dict>
 	</dict>
 </dict>

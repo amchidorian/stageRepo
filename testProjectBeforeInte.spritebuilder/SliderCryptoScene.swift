@@ -2,7 +2,7 @@
 //  SliderCryptoScene.swift
 //  ze iOS
 //
-//  Created by Clara MatchUpBox on 24/10/2018.
+//  Created by Dorian Pikcio on 24/10/2018.
 //  Copyright © 2018 Apportable. All rights reserved.
 //
 
@@ -36,14 +36,16 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     static var sDollars:Bool = true
     static var sList:Bool = true
     static var sFav:Bool = false
-    
+
+    static let sTotalCrypto:Int = 100
+
     // Function appelé au chargement de la scene
     func didLoadFromCCB(){
         _scrollViewCrypto.delegate = self
         let parentSlider:[CCNode]! = (_scrollViewCrypto!.children as? [CCNode])
         lSlider = parentSlider[0]
-        for _ in 0..<100{lDataCrypto.append([:])}
-        for _ in 0..<100{lDataCryptoAlphabet.append([:])}
+        for _ in 0..<SliderCryptoScene.sTotalCrypto{lDataCrypto.append([:])}
+        for _ in 0..<SliderCryptoScene.sTotalCrypto{lDataCryptoAlphabet.append([:])}
         organizeCryptoDatas()
         alphabeticSort()
         createSlider()
@@ -64,7 +66,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     func scrollViewDidScroll(_ _scrollViewCrypto: CCScrollView!) {
         let lScrollPositionY = _scrollViewCrypto.scrollPosition.y;
         if lOptions {
-            if lScrollPositionY > 600 {
+            if lScrollPositionY > 620 {
                 _optionsNode.animationManager.runAnimations(forSequenceNamed: "hideOptions")
                 lOptions = !lOptions
             }
@@ -80,7 +82,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     // Fonction appelé lorsque l'on clique sur le bouton pour passer de la vue en List à la vue en Grid et inversement.
     func changeView(){
         SliderCryptoScene.sList = !SliderCryptoScene.sList
-        lNbItemOnSlider = SliderCryptoScene.sList ? 100 : 34
+        lNbItemOnSlider = SliderCryptoScene.sList ? CGFloat(SliderCryptoScene.sTotalCrypto) : ceil(CGFloat(SliderCryptoScene.sTotalCrypto/3))
         createSlider()
     }
     
@@ -95,9 +97,9 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     func detailView(_ pSender:CCButton){
         let lIndexData = (Int(pSender.name!)!) - 1
         DetailCrypto.sDataCrypto = lDataCrypto[lIndexData]
-        let gameplayScene = CCBReader.load(asScene:"DetailCrypto")
-        let transition = CCTransition(fadeWithDuration: 1.0)
-        CCDirector.shared().present(gameplayScene, with: transition)
+        let lGameplayScene = CCBReader.load(asScene:"DetailCrypto")
+        let lTransition = CCTransition(fadeWithDuration: 1.0)
+        CCDirector.shared().present(lGameplayScene, with: lTransition)
     }
     
     // Fonction qui créer le slider.
@@ -114,40 +116,40 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
 
     // Fonction qui crée le slider pour la liste.
     func createSliderList(){
-        for var i in 0..<lDataCrypto.count{
-            var item:CCNode = CCBReader.load("ItemCrypto")
-            item.position = CGPoint.init(x: 0, y: lItemHeight * lNbItemOnSlider - lItemHeight * CGFloat(i+1))
-            var itemChildren:Array = item.children
-            for obj in itemChildren {
-                editItem(obj, i)
+        for i in 0..<lDataCrypto.count{
+            let lItem:CCNode = CCBReader.load("ItemCrypto")
+            lItem.position = CGPoint.init(x: 0, y: lItemHeight * lNbItemOnSlider - lItemHeight * CGFloat(i+1))
+            let lItemChildren:Array = lItem.children
+            for lObj in lItemChildren {
+                editItem(lObj, i)
             }
-            lSlider.addChild(item)
+            lSlider.addChild(lItem)
         }
     }
 
     // Fonction qui crée le slider pour la grid.
     func createSliderGrid(){
-        var posIndex = 0;
+        var lPosIndex = 0;
         for i in stride(from: 0, to: lDataCrypto.count, by: 3) {
-            var tempi = i
-            var item:CCNode = CCBReader.load("ItemCryptoGrid")
-            item.position = CGPoint.init(x: 0, y: lItemHeight * 34 - lItemHeight * CGFloat(posIndex+1))
-            var itemChildrens:Array = item.children
-            for itemChildren in itemChildrens {
-                print(tempi)
-                if tempi + 1 > lDataCrypto.count {
+            var lTempi = i
+            let lItem:CCNode = CCBReader.load("ItemCryptoGrid")
+            lItem.position = CGPoint.init(x: 0, y: lItemHeight * ceil(CGFloat(SliderCryptoScene.sTotalCrypto/3)) - lItemHeight * CGFloat(lPosIndex+1))
+            let lItemChildrens:Array = lItem.children
+            for lItemChildren in lItemChildrens {
+                print(lTempi)
+                if lTempi + 1 > lDataCrypto.count {
                     print("error")
-                    (itemChildren as! CCNode).visible = false
+                    (lItemChildren as! CCNode).visible = false
                 } else {
-                    var itemChildrenChildrens:Array = (itemChildren as! CCNode).children
-                    for itemChildrenChildren in itemChildrenChildrens {
-                        editItem(itemChildrenChildren, tempi)
+                    let lItemChildrenChildrens:Array = (lItemChildren as! CCNode).children
+                    for lItemChildrenChildren in lItemChildrenChildrens {
+                        editItem(lItemChildrenChildren, lTempi)
                     }
-                    tempi = tempi+1
+                    lTempi = lTempi+1
                 }
             }
-            lSlider.addChild(item)
-            posIndex = posIndex + 1
+            lSlider.addChild(lItem)
+            lPosIndex = lPosIndex + 1
         }
     }
     
@@ -190,7 +192,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
     
-    // Fonction qui créer le tableau de data
+    // Function to create array of data
     func organizeCryptoDatas(){
         let lCryptoDatas = unwrapJson(HttpRequest.sCryptoDataParsed!["data"]!)
         for(_,lValue) in lCryptoDatas {
@@ -255,7 +257,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
     
-    // Fonction qui trie dans l'ordre alphabétique les cryotos.
+    // Function to alpha sort crypto data
     func alphabeticSort(){
         lDataCryptoAlphabet = lDataCrypto
         lDataCryptoAlphabet.sort {

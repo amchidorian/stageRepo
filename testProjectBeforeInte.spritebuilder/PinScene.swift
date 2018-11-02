@@ -2,7 +2,7 @@
 //  PinScene.swift
 //  ze iOS
 //
-//  Created by Clara MatchUpBox on 19/10/2018.
+//  Created by Dorian Pikcio on 19/10/2018.
 //  Copyright © 2018 Apportable. All rights reserved.
 //
 
@@ -34,8 +34,8 @@ class PinScene: CCNode {
         lDigitIcons = [_digit1, _digit2, _digit3, _digit4]
         hideDigit()
         setLabel()
-        self._clippingNode.stencil = self._myCircle;
-        self._clippingNode.alphaThreshold = 0.25;
+        _clippingNode.stencil = _myCircle;
+        _clippingNode.alphaThreshold = 0.25;
     }
     
     // Method called by a click on a pin button
@@ -163,9 +163,9 @@ class PinScene: CCNode {
     
     // Func taht close the pinScene
     func closePinScene(){
-        let gameplayScene = CCBReader.load(asScene:"MainScene")
-        let transition = CCTransition(fadeWithDuration: 1.0)
-        CCDirector.shared().present(gameplayScene, with: transition)
+        let lGameplayScene = CCBReader.load(asScene:"MainScene")
+        let lTransition = CCTransition(fadeWithDuration: 1.0)
+        CCDirector.shared().present(lGameplayScene, with: lTransition)
     }
     
     // Method that update the label based on the static var sStep

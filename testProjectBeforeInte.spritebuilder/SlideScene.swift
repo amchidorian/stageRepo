@@ -20,10 +20,10 @@ class SlideScene: CCNode, CCScrollViewDelegate {
     // init
     func didLoadFromCCB(){
         _scrollView.delegate = self
-        self.lAllPage  = [_num1,_num2,_num3]
+        lAllPage  = [_num1,_num2,_num3]
         lIndexPage = 0
-        self.displayImg()
-        self._scrollView.visible = false;
+        displayImg()
+        _scrollView.visible = false;
         _logButton.animationManager.runAnimations(forSequenceNamed: "closeSlide")
     }
  
@@ -34,17 +34,17 @@ class SlideScene: CCNode, CCScrollViewDelegate {
 
     // Func opening the slide with the animation openSlide
     func openSlide(){
-        self._scrollView.visible = true;
-        self.lIndexPage = Int(0);
-        self._scrollView.horizontalPage = Int32(0)
-        self.displayImg();
+        _scrollView.visible = true;
+        lIndexPage = Int(0);
+        _scrollView.horizontalPage = Int32(0)
+        displayImg();
         _logButton.animationManager.runAnimations(forSequenceNamed: "openSlide")
     }
 
     // Func detecting the slide page change.
     func scrollViewDidScroll(_ scrollView: CCScrollView!) {
-        self.lIndexPage = Int(_scrollView!.horizontalPage);
-        self.displayImg();
+        lIndexPage = Int(_scrollView!.horizontalPage);
+        displayImg();
     }
     
     // Func displaying the right image depending on the slide position

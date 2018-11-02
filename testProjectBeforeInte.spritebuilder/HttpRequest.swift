@@ -2,7 +2,7 @@
 //  HttpRequest.swift
 //  ze iOS
 //
-//  Created by Clara MatchUpBox on 26/10/2018.
+//  Created by Dorian Pikcio on 26/10/2018.
 //  Copyright © 2018 Apportable. All rights reserved.
 //
 
@@ -14,15 +14,15 @@ class HttpRequest {
     static var sCryptoDataParsed:[String:Any]!
     
     func apiRequest(_ pApiUrl:String){
-        let url = URL(string: pApiUrl)
-        var datas:String!
-        if let usableUrl = url {
-            let request = URLRequest(url: usableUrl)
+        let lUrl = URL(string: pApiUrl)
+        var lDatas:String!
+        if let lUsableUrl = lUrl {
+            let request = URLRequest(url: lUsableUrl)
             let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
                 if let data = data {
-                    if let stringData = String(data: data, encoding: String.Encoding.utf8) {
-                        datas = stringData
-                        HttpRequest.sCryptoDataRaw = datas.data(using: .utf8)
+                    if let lStringData = String(data: data, encoding: String.Encoding.utf8) {
+                        lDatas = lStringData
+                        HttpRequest.sCryptoDataRaw = lDatas.data(using: .utf8)
                         HttpRequest.sCryptoDataParsed = self.parseJson(HttpRequest.sCryptoDataRaw)
                         //                        print(HttpRequest.sCryptoDataParsed)
                     }

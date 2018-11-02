@@ -2,7 +2,7 @@
 //  PinMenuScene.swift
 //  ze iOS
 //
-//  Created by Clara MatchUpBox on 24/10/2018.
+//  Created by Dorian Pikcio on 24/10/2018.
 //  Copyright © 2018 Apportable. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ class PinMenuScene: CCNode {
     
     static var sPinAction:Bool!
     
-    // Function de redirection en fonction de l'action (Delete / Update) choisie.
+    // Function to redirect for update or delete.
     func editPin(_ pSender:CCButton){
         if pSender.name == "updatePin" {
             PinMenuScene.sPinAction = true
@@ -20,8 +20,8 @@ class PinMenuScene: CCNode {
             PinMenuScene.sPinAction = false
         }
         PinScene.sStep = 3
-        let gameplayScene = CCBReader.load(asScene:"PinScene")
-        let transition = CCTransition(fadeWithDuration: 1.0)
-        CCDirector.shared().present(gameplayScene, with: transition)
+        let lGameplayScene = CCBReader.load(asScene:"PinScene")
+        let lTransition = CCTransition(fadeWithDuration: 1.0)
+        CCDirector.shared().present(lGameplayScene, with: lTransition)
     }
 }

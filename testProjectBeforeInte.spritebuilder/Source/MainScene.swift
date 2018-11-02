@@ -1,7 +1,6 @@
 import Foundation
 
 class MainScene : CCNode{
-
     
     func didLoadFromCCB(){
         HttpRequest().apiRequest("https://api.coinmarketcap.com/v2/ticker/")
@@ -12,29 +11,29 @@ class MainScene : CCNode{
     func goToPin(){
         if PinScene.sFinalPinCode == nil{
             PinScene.sStep = 1;
-            let gameplayScene = CCBReader.load(asScene:"PinScene")
-            let transition = CCTransition(fadeWithDuration: 1.0)
-            CCDirector.shared().present(gameplayScene, with: transition)
+            let lGameplayScene = CCBReader.load(asScene:"PinScene")
+            let lTransition = CCTransition(fadeWithDuration: 1.0)
+            CCDirector.shared().present(lGameplayScene, with: lTransition)
         }else{
-            let gameplayScene = CCBReader.load(asScene:"MenuPinScene")
-            let transition = CCTransition(fadeWithDuration: 1.0)
-            CCDirector.shared().present(gameplayScene, with: transition)
+            let lGameplayScene = CCBReader.load(asScene:"MenuPinScene")
+            let lTransition = CCTransition(fadeWithDuration: 1.0)
+            CCDirector.shared().present(lGameplayScene, with: lTransition)
         }
     }
     
     //Func redirecting toward the HomeSlide
     func goToSlide(){
-        let gameplayScene = CCBReader.load(asScene:"SlideScene")
-        let transition = CCTransition(fadeWithDuration: 1.0)
-        CCDirector.shared().present(gameplayScene, with:
-            transition)
+        let lGameplayScene = CCBReader.load(asScene:"SlideScene")
+        let lTransition = CCTransition(fadeWithDuration: 1.0)
+        CCDirector.shared().present(lGameplayScene, with:
+            lTransition)
     }
     
     //Func redirecting toward the CryptoSlide
     func goToSlideCrypto(){
-        let gameplayScene = CCBReader.load(asScene:"CryptoScene")
-        let transition = CCTransition(fadeWithDuration: 1.0)
-        CCDirector.shared().present(gameplayScene, with:
-            transition)
+        let lGameplayScene = CCBReader.load(asScene:"CryptoScene")
+        let lTransition = CCTransition(fadeWithDuration: 1.0)
+        CCDirector.shared().present(lGameplayScene, with:
+            lTransition)
     }
 }

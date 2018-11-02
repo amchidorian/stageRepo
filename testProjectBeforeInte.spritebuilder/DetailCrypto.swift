@@ -2,7 +2,7 @@
 //  DetailCrypto.swift
 //  ze iOSs
 //
-//  Created by Clara MatchUpBox on 31/10/2018.
+//  Created by Dorian Pikcio on 31/10/2018.
 //  Copyright © 2018 Apportable. All rights reserved.
 //
 
