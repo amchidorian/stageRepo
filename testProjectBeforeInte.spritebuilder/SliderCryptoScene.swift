@@ -229,6 +229,9 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
             case "percent_change_24h" :
                 self.lTemplateCrypto["change24"] = lValue
                 break
+            case "percent_change_1h" :
+                self.lTemplateCrypto["change1"] = lValue
+                break
             case "quotes" :
                 let lTempData = unwrapJson(lValue)
                 organizeCryptoData(lTempData)
