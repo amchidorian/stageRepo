@@ -7,7 +7,7 @@
 		<key>ObjectiveChipmunk-Android.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>23</integer>
 		</dict>
 		<key>ObjectiveChipmunk-Mac.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>ObjectiveChipmunk-iPhone.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 </dict>

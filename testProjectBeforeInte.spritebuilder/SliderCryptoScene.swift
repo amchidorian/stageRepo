@@ -34,11 +34,10 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
     // Variable Static
     static var sAlphabet:Bool = false
     static var sDollars:Bool = true
-    static var sList = true
-    static var sFav = false
+    static var sList:Bool = true
+    static var sFav:Bool = false
     
-    
-    
+    // Function appelé au chargement de la scene
     func didLoadFromCCB(){
         _scrollViewCrypto.delegate = self
         let parentSlider:[CCNode]! = (_scrollViewCrypto!.children as? [CCNode])
@@ -50,6 +49,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         createSlider()
     }
     
+    // Function appelé lorsque l'on appuie sur le bouton pour avoir dans l'ordre alphabétic
     func alphaView(){
         SliderCryptoScene.sAlphabet = !SliderCryptoScene.sAlphabet
         if SliderCryptoScene.sAlphabet {
@@ -60,6 +60,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
        createSlider()
     }
 
+    // Function qui détecte quand la scroll bouge et qui en fonction de la position affiche ou non le panneau d'options.
     func scrollViewDidScroll(_ _scrollViewCrypto: CCScrollView!) {
         let lScrollPositionY = _scrollViewCrypto.scrollPosition.y;
         if lOptions {
@@ -76,18 +77,21 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
     
+    // Fonction appelé lorsque l'on clique sur le bouton pour passer de la vue en List à la vue en Grid et inversement.
     func changeView(){
         SliderCryptoScene.sList = !SliderCryptoScene.sList
         lNbItemOnSlider = SliderCryptoScene.sList ? 100 : 34
         createSlider()
     }
     
+    // Fonction appelé lorsque l'on clique sur le bouton pour changer de devise.
     func changeDevise(){
         SliderCryptoScene.sDollars = !SliderCryptoScene.sDollars
         _deviseLabel.string = SliderCryptoScene.sDollars ? "€" : "$"
         createSlider()
     }
     
+    // Fonction appelé lorsque l'on clique sur une crypto pour accéder à ses détails.
     func detailView(_ pSender:CCButton){
         let lIndexData = (Int(pSender.name!)!) - 1
         DetailCrypto.sDataCrypto = lDataCrypto[lIndexData]
@@ -96,6 +100,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         CCDirector.shared().present(gameplayScene, with: transition)
     }
     
+    // Fonction qui créer le slider.
     func createSlider(){
         lSlider.removeAllChildren()
         lItemHeight = SliderCryptoScene.sList ? lItemCryptoList.contentSize.height : lItemCryptoGrid.contentSize.height
@@ -107,6 +112,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
 
+    // Fonction qui crée le slider pour la liste.
     func createSliderList(){
         for var i in 0..<lDataCrypto.count{
             var item:CCNode = CCBReader.load("ItemCrypto")
@@ -119,6 +125,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
 
+    // Fonction qui crée le slider pour la grid.
     func createSliderGrid(){
         var posIndex = 0;
         for i in stride(from: 0, to: lDataCrypto.count, by: 3) {
@@ -144,6 +151,7 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
     
+    // Fonction qui créer un item du slider.
     func editItem(_ lElement:Any, _ lIndex:Int){
         var lCryptoData = SliderCryptoScene.sAlphabet ? lDataCryptoAlphabet![lIndex] : lDataCrypto![lIndex]
         if let sprite = lElement as? CCSprite {
@@ -182,49 +190,51 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
     
+    // Fonction qui créer le tableau de data
     func organizeCryptoDatas(){
-        let cryptoDatas = unwrapJson(HttpRequest.sCryptoDataParsed!["data"]!)
-        for(_,value) in cryptoDatas {
+        let lCryptoDatas = unwrapJson(HttpRequest.sCryptoDataParsed!["data"]!)
+        for(_,lValue) in lCryptoDatas {
             self.lTemplateCrypto = [:]
-            let cryptoData = unwrapJson(value)
-            organizeCryptoData(cryptoData)
-            let index = ((lTemplateCrypto["rank"] as? Int)!) - 1
+            let lCryptoData = unwrapJson(lValue)
+            organizeCryptoData(lCryptoData)
+            let lIndex = ((lTemplateCrypto["rank"] as? Int)!) - 1
             lTemplateCrypto["img"] = "\(lTemplateCrypto["name"]!).png"
-            lDataCrypto![index] = self.lTemplateCrypto!
+            lDataCrypto![lIndex] = self.lTemplateCrypto!
         }
     }
     
+    // Fonction qui organise une data avant de l'insérer dans le tableau.
     func organizeCryptoData(_ pCryptoData:NSDictionary){
-        for(key,value) in pCryptoData {
+        for(key,lValue) in pCryptoData {
             let jsonKey = key as? String
             switch jsonKey {
             case "rank":
-                self.lTemplateCrypto["rank"] = value
+                self.lTemplateCrypto["rank"] = lValue
                 break
             case "name":
-                self.lTemplateCrypto["name"] = value
+                self.lTemplateCrypto["name"] = lValue
                 break
             case "symbol" :
-                self.lTemplateCrypto["symbol"] = value
+                self.lTemplateCrypto["symbol"] = lValue
                 break
             case "total_supply" :
-                self.lTemplateCrypto["total"] = value
+                self.lTemplateCrypto["total"] = lValue
                 break
             case "price" :
-                self.lTemplateCrypto["price"] = value
+                self.lTemplateCrypto["price"] = lValue
                 break
             case "percent_change_7d" :
-                self.lTemplateCrypto["change7"] = value
+                self.lTemplateCrypto["change7"] = lValue
                 break
             case "percent_change_24h" :
-                self.lTemplateCrypto["change24"] = value
+                self.lTemplateCrypto["change24"] = lValue
                 break
             case "quotes" :
-                let lTempData = unwrapJson(value)
+                let lTempData = unwrapJson(lValue)
                 organizeCryptoData(lTempData)
                 break
             case "USD" :
-                let lTempData = unwrapJson(value)
+                let lTempData = unwrapJson(lValue)
                 organizeCryptoData(lTempData)
                 break
             default:
@@ -233,14 +243,16 @@ class SliderCryptoScene: CCNode, CCScrollViewDelegate {
         }
     }
     
-    func unwrapJson(_ data:Any) -> NSDictionary{
-        if let lDataToReturn = data as? NSDictionary {
+    // Fonction pour unwrap un JSON
+    func unwrapJson(_ pData:Any) -> NSDictionary{
+        if let lDataToReturn = pData as? NSDictionary {
             return lDataToReturn
         } else {
             return [:]
         }
     }
     
+    // Fonction qui trie dans l'ordre alphabétique les cryotos.
     func alphabeticSort(){
         lDataCryptoAlphabet = lDataCrypto
         lDataCryptoAlphabet.sort {
